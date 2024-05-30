@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.backtocamera{
+    height: 4rem;
+    width: 4rem;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5rem;
+    bottom: 4rem;
+}
+.backtocamera:hover{
+    cursor: pointer;
+}
+
+.gallery-cont{
+    height: 100vh;
+    width: 100vw;
+    background: #535c68;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media-cont{
+    height: 12rem;
+    width: 12rem;
+    border: 2px solid white;
+    background: transparent;
+    margin: 2rem;
+}
+.action{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action:hover{
+    cursor: pointer;
+}
+.media{
+    height: calc(100% - 2rem - 2rem);
+}
+.media > *{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.download{
+    color: white;
+    background: black;
+    border: 1px solid white;
+    border-bottom: none;
+    font-size: 20px;
+}
+.delet{
+    background: red;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-top: 1px solid white;
+}
